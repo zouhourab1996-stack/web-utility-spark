@@ -151,6 +151,9 @@ const Layout = ({ children }: LayoutProps) => {
               <p className="text-sm text-muted-foreground pt-2">
                 Thank you for your generosity and support! 🙏
               </p>
+              <p className="text-xs text-muted-foreground pt-2 italic">
+                Donations are for completing a rural water well in Tunisia.
+              </p>
             </DialogDescription>
           </DialogHeader>
         </DialogContent>
