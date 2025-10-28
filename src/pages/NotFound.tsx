@@ -1,5 +1,8 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import { useEffect } from "react";
+import { Home, ArrowLeft } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 const NotFound = () => {
   const location = useLocation();
@@ -9,14 +12,35 @@ const NotFound = () => {
   }, [location.pathname]);
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">404</h1>
-        <p className="mb-4 text-xl text-gray-600">Oops! Page not found</p>
-        <a href="/" className="text-blue-500 underline hover:text-blue-700">
-          Return to Home
-        </a>
-      </div>
+    <div className="min-h-screen flex items-center justify-center px-4 py-12">
+      <Card className="max-w-md w-full text-center">
+        <CardHeader>
+          <div className="text-8xl font-bold text-primary mb-4">404</div>
+          <CardTitle className="text-2xl">Page Not Found</CardTitle>
+          <CardDescription>
+            The page you're looking for doesn't exist or has been moved.
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <p className="text-sm text-muted-foreground">
+            Requested path: <code className="bg-secondary px-2 py-1 rounded">{location.pathname}</code>
+          </p>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <Button asChild className="gradient-primary">
+              <Link to="/">
+                <Home className="w-4 h-4 mr-2" />
+                Go Home
+              </Link>
+            </Button>
+            <Button asChild variant="outline">
+              <Link to="javascript:history.back()">
+                <ArrowLeft className="w-4 h-4 mr-2" />
+                Go Back
+              </Link>
+            </Button>
+          </div>
+        </CardContent>
+      </Card>
     </div>
   );
 };
