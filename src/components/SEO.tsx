@@ -10,8 +10,8 @@ interface SEOProps {
 }
 
 const SEO = ({ title, description, keywords, canonical, ogImage, schema }: SEOProps) => {
-  const baseUrl = "https://zouhourab1996-stack.github.io/web-utility-spark";
-  const fullTitle = `${title} | Smart Tools Hub`;
+  const baseUrl = import.meta.env.VITE_SITE_URL || "https://mywebsite.com";
+  const fullTitle = title.includes("Smart Tools Hub") ? title : `${title} | Smart Tools Hub`;
   const defaultImage = `${baseUrl}/og-image.png`;
   const imageUrl = ogImage || defaultImage;
   const canonicalUrl = canonical ? `${baseUrl}${canonical}` : baseUrl;
