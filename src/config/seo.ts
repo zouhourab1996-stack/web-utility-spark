@@ -8,7 +8,7 @@ export interface SEOConfig {
 
 export const siteConfig = {
   name: "Smart Tools Hub",
-  url: "https://mywebsite.com",
+  url: "https://zouhourab1996-stack.github.io/web-utility-spark",
   ogImage: "/og-image.png",
 };
 
@@ -373,5 +373,89 @@ export const seoConfigs: Record<string, SEOConfig> = {
         "priceCurrency": "USD"
       }
     }
+  },
+  "/recipe-scaler": {
+    title: "Recipe Scaler — Scale Recipes for Any Serving Size",
+    description: "Free recipe scaler and ingredient converter. Scale recipes up or down instantly.",
+    keywords: "recipe scaler, ingredient converter, cooking calculator, recipe adjuster",
+    canonical: "/recipe-scaler"
+  },
+  "/price-comparator": {
+    title: "Price Comparator — Compare Unit Prices",
+    description: "Compare grocery prices per unit to find the best value.",
+    keywords: "price comparison, unit price, grocery deals, best value finder",
+    canonical: "/price-comparator"
+  },
+  "/natural-unit-converter": {
+    title: "Natural Unit Converter — Convert Units Naturally",
+    description: "Type conversions like '5 feet to meters'. Natural language unit converter.",
+    keywords: "unit converter, natural language, feet to meters, conversion tool",
+    canonical: "/natural-unit-converter"
+  },
+  "/meeting-time-finder": {
+    title: "Meeting Time Finder — Timezone Converter",
+    description: "Find perfect meeting times across multiple timezones.",
+    keywords: "timezone converter, meeting scheduler, time zones, global meetings",
+    canonical: "/meeting-time-finder"
+  },
+  "/donation-qr-builder": {
+    title: "Donation QR Builder — Create Payment QR Codes",
+    description: "Generate QR codes for PayPal and crypto donations.",
+    keywords: "donation QR, payment QR code, PayPal QR, crypto donation",
+    canonical: "/donation-qr-builder"
+  },
+  "/pantry-tracker": {
+    title: "Pantry Tracker — Track Food Expiration",
+    description: "Track expiration dates and reduce food waste.",
+    keywords: "pantry tracker, expiration tracker, food waste, kitchen organizer",
+    canonical: "/pantry-tracker"
+  },
+  "/accessibility-checker": {
+    title: "Accessibility Checker — WCAG Contrast Tool",
+    description: "Check color contrast for WCAG accessibility compliance.",
+    keywords: "accessibility checker, contrast checker, WCAG, color contrast",
+    canonical: "/accessibility-checker"
+  },
+  "/policy-generator": {
+    title: "Policy Generator — Privacy Policy & Terms Creator",
+    description: "Generate privacy policy and terms of service for free.",
+    keywords: "privacy policy generator, terms generator, legal documents",
+    canonical: "/policy-generator"
+  },
+  "/holiday-planner": {
+    title: "Holiday Planner — Find Public Holidays",
+    description: "Find upcoming public holidays by country.",
+    keywords: "holiday planner, public holidays, vacation planner",
+    canonical: "/holiday-planner"
+  },
+  "/text-to-slug": {
+    title: "Text to Slug — URL & Filename Converter",
+    description: "Convert text to URL-friendly slugs and safe filenames.",
+    keywords: "slug generator, URL slug, filename sanitizer, text converter",
+    canonical: "/text-to-slug"
+  },
+  "/currency-rounder": {
+    title: "Currency Rounder — Round Prices for Tags",
+    description: "Round prices to convenient amounts for retail displays.",
+    keywords: "price rounder, currency rounder, retail pricing",
+    canonical: "/currency-rounder"
+  },
+  "/privacy-policy": {
+    title: "Privacy Policy — Smart Tools Hub",
+    description: "Privacy policy for Smart Tools Hub. Learn how we protect your data.",
+    keywords: "privacy policy, data protection, user privacy",
+    canonical: "/privacy-policy"
+  },
+  "/terms-of-service": {
+    title: "Terms of Service — Smart Tools Hub",
+    description: "Terms of service for using Smart Tools Hub.",
+    keywords: "terms of service, terms and conditions, user agreement",
+    canonical: "/terms-of-service"
+  },
+  "/contact": {
+    title: "Contact Us — Smart Tools Hub",
+    description: "Get in touch with Smart Tools Hub. We'd love to hear from you.",
+    keywords: "contact us, feedback, support, help",
+    canonical: "/contact"
   }
 };

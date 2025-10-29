@@ -33,6 +33,20 @@ const Layout = ({ children }: LayoutProps) => {
     { name: "Pomodoro Timer", path: "/pomodoro-timer" },
     { name: "Base64 Converter", path: "/base64-converter" },
     { name: "Random Name Picker", path: "/random-name-picker" },
+    { name: "Recipe Scaler", path: "/recipe-scaler" },
+    { name: "Price Comparator", path: "/price-comparator" },
+    { name: "Natural Unit Converter", path: "/natural-unit-converter" },
+    { name: "Meeting Time Finder", path: "/meeting-time-finder" },
+    { name: "Donation QR Builder", path: "/donation-qr-builder" },
+    { name: "Pantry Tracker", path: "/pantry-tracker" },
+    { name: "Accessibility Checker", path: "/accessibility-checker" },
+    { name: "Policy Generator", path: "/policy-generator" },
+    { name: "Holiday Planner", path: "/holiday-planner" },
+    { name: "Text to Slug", path: "/text-to-slug" },
+    { name: "Currency Rounder", path: "/currency-rounder" },
+    { name: "Privacy Policy", path: "/privacy-policy" },
+    { name: "Terms of Service", path: "/terms-of-service" },
+    { name: "Contact Us", path: "/contact" },
   ];
 
   return (
@@ -115,19 +129,46 @@ const Layout = ({ children }: LayoutProps) => {
       {/* Footer */}
       <footer className="bg-card border-t border-border mt-auto">
         <div className="container mx-auto px-4 py-8">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="text-center md:text-left">
+          <div className="grid md:grid-cols-3 gap-8 mb-6">
+            <div>
+              <h3 className="font-semibold mb-3">Smart Tools Hub</h3>
               <p className="text-sm text-muted-foreground">
-                © {new Date().getFullYear()} Smart Tools Hub. All rights reserved.
+                30+ free online tools for calculations, conversions, and productivity
               </p>
             </div>
-            <Button
-              onClick={() => setDonateModalOpen(true)}
-              className="gradient-accent text-white font-semibold shadow-md hover:shadow-lg transition-all"
-            >
-              <Heart className="w-4 h-4 mr-2" />
-              Support Our Mission
-            </Button>
+            <div>
+              <h3 className="font-semibold mb-3">Quick Links</h3>
+              <div className="space-y-2 text-sm">
+                <Link to="/privacy-policy" className="block text-muted-foreground hover:text-primary">
+                  Privacy Policy
+                </Link>
+                <Link to="/terms-of-service" className="block text-muted-foreground hover:text-primary">
+                  Terms of Service
+                </Link>
+                <Link to="/contact" className="block text-muted-foreground hover:text-primary">
+                  Contact Us
+                </Link>
+              </div>
+            </div>
+            <div>
+              <h3 className="font-semibold mb-3">Support Us</h3>
+              <p className="text-sm text-muted-foreground mb-2">
+                Help complete a water well in rural Tunisia 🌾
+              </p>
+              <Button
+                onClick={() => setDonateModalOpen(true)}
+                size="sm"
+                variant="outline"
+              >
+                <Heart className="w-4 h-4 mr-2" />
+                Donate
+              </Button>
+            </div>
+          </div>
+          <div className="text-center pt-6 border-t border-border">
+            <p className="text-sm text-muted-foreground">
+              © {new Date().getFullYear()} Smart Tools Hub. All rights reserved.
+            </p>
           </div>
         </div>
       </footer>

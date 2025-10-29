@@ -2,7 +2,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import CompoundInterest from "./pages/CompoundInterest";
@@ -24,6 +24,20 @@ import GPACalculator from "./pages/GPACalculator";
 import PomodoroTimer from "./pages/PomodoroTimer";
 import Base64Converter from "./pages/Base64Converter";
 import RandomNamePicker from "./pages/RandomNamePicker";
+import RecipeScaler from "./pages/RecipeScaler";
+import PriceComparator from "./pages/PriceComparator";
+import NaturalUnitConverter from "./pages/NaturalUnitConverter";
+import MeetingTimeFinder from "./pages/MeetingTimeFinder";
+import DonationQRBuilder from "./pages/DonationQRBuilder";
+import PantryTracker from "./pages/PantryTracker";
+import AccessibilityChecker from "./pages/AccessibilityChecker";
+import PolicyGenerator from "./pages/PolicyGenerator";
+import HolidayPlanner from "./pages/HolidayPlanner";
+import TextToSlug from "./pages/TextToSlug";
+import CurrencyRounder from "./pages/CurrencyRounder";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
+import ContactUs from "./pages/ContactUs";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -33,7 +47,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <HashRouter>
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -56,11 +70,25 @@ const App = () => (
             <Route path="/pomodoro-timer" element={<PomodoroTimer />} />
             <Route path="/base64-converter" element={<Base64Converter />} />
             <Route path="/random-name-picker" element={<RandomNamePicker />} />
+            <Route path="/recipe-scaler" element={<RecipeScaler />} />
+            <Route path="/price-comparator" element={<PriceComparator />} />
+            <Route path="/natural-unit-converter" element={<NaturalUnitConverter />} />
+            <Route path="/meeting-time-finder" element={<MeetingTimeFinder />} />
+            <Route path="/donation-qr-builder" element={<DonationQRBuilder />} />
+            <Route path="/pantry-tracker" element={<PantryTracker />} />
+            <Route path="/accessibility-checker" element={<AccessibilityChecker />} />
+            <Route path="/policy-generator" element={<PolicyGenerator />} />
+            <Route path="/holiday-planner" element={<HolidayPlanner />} />
+            <Route path="/text-to-slug" element={<TextToSlug />} />
+            <Route path="/currency-rounder" element={<CurrencyRounder />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms-of-service" element={<TermsOfService />} />
+            <Route path="/contact" element={<ContactUs />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>
-      </BrowserRouter>
+      </HashRouter>
     </TooltipProvider>
   </QueryClientProvider>
 );
