@@ -27,6 +27,12 @@ const Layout = ({ children }: LayoutProps) => {
     { name: "QR Generator", path: "/qr-generator" },
     { name: "Random Number", path: "/random-number" },
     { name: "Percentage Calculator", path: "/percentage-calculator" },
+    { name: "Image Compressor", path: "/image-compressor" },
+    { name: "Text to Speech", path: "/text-to-speech" },
+    { name: "GPA Calculator", path: "/gpa-calculator" },
+    { name: "Pomodoro Timer", path: "/pomodoro-timer" },
+    { name: "Base64 Converter", path: "/base64-converter" },
+    { name: "Random Name Picker", path: "/random-name-picker" },
   ];
 
   return (
@@ -68,7 +74,7 @@ const Layout = ({ children }: LayoutProps) => {
 
           {/* Mobile Menu */}
           {mobileMenuOpen && (
-            <div className="md:hidden py-4 space-y-2 border-t border-border">
+            <div className="md:hidden py-4 space-y-2 border-t border-border max-h-[70vh] overflow-y-auto animate-fade-in">
               <Link
                 to="/"
                 className="block px-4 py-2 text-sm font-medium hover:bg-secondary rounded-md transition-colors"
@@ -136,7 +142,7 @@ const Layout = ({ children }: LayoutProps) => {
             </DialogTitle>
             <DialogDescription className="text-base pt-4 space-y-4">
               <p className="text-foreground">
-                💧 Your donations help complete an agricultural well for a rural area in Tunisia.
+                All donations go toward completing a community agricultural water well in rural Tunisia 🌾
               </p>
               <div className="space-y-3 pt-2">
                 <div className="p-4 bg-secondary rounded-lg">
@@ -149,10 +155,7 @@ const Layout = ({ children }: LayoutProps) => {
                 </div>
               </div>
               <p className="text-sm text-muted-foreground pt-2">
-                Thank you for your generosity and support! 🙏
-              </p>
-              <p className="text-xs text-muted-foreground pt-2 italic">
-                Donations are for completing a rural water well in Tunisia.
+                Thank you for helping us bring clean water to those in need! 🙏
               </p>
             </DialogDescription>
           </DialogHeader>

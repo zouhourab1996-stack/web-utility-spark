@@ -18,6 +18,12 @@ import QRGenerator from "./pages/QRGenerator";
 import BMICalculator from "./pages/BMICalculator";
 import PercentageCalculator from "./pages/PercentageCalculator";
 import RandomNumber from "./pages/RandomNumber";
+import ImageCompressor from "./pages/ImageCompressor";
+import TextToSpeech from "./pages/TextToSpeech";
+import GPACalculator from "./pages/GPACalculator";
+import PomodoroTimer from "./pages/PomodoroTimer";
+import Base64Converter from "./pages/Base64Converter";
+import RandomNamePicker from "./pages/RandomNamePicker";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -44,6 +50,12 @@ const App = () => (
             <Route path="/bmi-calculator" element={<BMICalculator />} />
             <Route path="/percentage-calculator" element={<PercentageCalculator />} />
             <Route path="/random-number" element={<RandomNumber />} />
+            <Route path="/image-compressor" element={<ImageCompressor />} />
+            <Route path="/text-to-speech" element={<TextToSpeech />} />
+            <Route path="/gpa-calculator" element={<GPACalculator />} />
+            <Route path="/pomodoro-timer" element={<PomodoroTimer />} />
+            <Route path="/base64-converter" element={<Base64Converter />} />
+            <Route path="/random-name-picker" element={<RandomNamePicker />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
