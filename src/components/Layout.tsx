@@ -169,6 +169,9 @@ const Layout = ({ children }: LayoutProps) => {
             <p className="text-sm text-muted-foreground">
               © {new Date().getFullYear()} Smart Tools Hub. All rights reserved.
             </p>
+            <p className="text-xs text-muted-foreground mt-2">
+              No part of this website may be reproduced without permission.
+            </p>
           </div>
         </div>
       </footer>

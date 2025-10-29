@@ -10,7 +10,7 @@ interface SEOProps {
 }
 
 const SEO = ({ title, description, keywords, canonical, ogImage, schema }: SEOProps) => {
-  const baseUrl = import.meta.env.VITE_SITE_URL || "https://mywebsite.com";
+  const baseUrl = "https://zouhourab1996-stack.github.io/web-utility-spark";
   const fullTitle = title.includes("Smart Tools Hub") ? title : `${title} | Smart Tools Hub`;
   const defaultImage = `${baseUrl}/og-image.png`;
   const imageUrl = ogImage || defaultImage;
@@ -23,6 +23,14 @@ const SEO = ({ title, description, keywords, canonical, ogImage, schema }: SEOPr
       <meta name="description" content={description} />
       {keywords && <meta name="keywords" content={keywords} />}
       <link rel="canonical" href={canonicalUrl} />
+      
+      {/* Copyright & Security */}
+      <meta name="copyright" content="© 2025 Smart Tools Hub. All rights reserved." />
+      <meta name="author" content="Smart Tools Hub" />
+      <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+      <meta name="googlebot" content="index, follow" />
+      <meta name="rating" content="general" />
+      <meta name="referrer" content="strict-origin-when-cross-origin" />
 
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
@@ -30,7 +38,10 @@ const SEO = ({ title, description, keywords, canonical, ogImage, schema }: SEOPr
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={imageUrl} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
       <meta property="og:site_name" content="Smart Tools Hub" />
+      <meta property="og:locale" content="en_US" />
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
@@ -38,12 +49,19 @@ const SEO = ({ title, description, keywords, canonical, ogImage, schema }: SEOPr
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={imageUrl} />
-
-      {/* Additional SEO */}
-      <meta name="robots" content="index, follow" />
+      <meta name="twitter:site" content="@SmartToolsHub" />
+      <meta name="twitter:creator" content="@SmartToolsHub" />
+      
+      {/* Additional SEO & PWA */}
+      <meta name="theme-color" content="#3b82f6" />
+      <meta name="application-name" content="Smart Tools Hub" />
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+      <meta name="apple-mobile-web-app-title" content="Smart Tools Hub" />
+      <meta name="mobile-web-app-capable" content="yes" />
+      <meta name="format-detection" content="telephone=no" />
       <meta name="language" content="English" />
       <meta name="revisit-after" content="7 days" />
-      <meta name="author" content="Smart Tools Hub" />
 
       {/* Schema.org JSON-LD */}
       {schema && (

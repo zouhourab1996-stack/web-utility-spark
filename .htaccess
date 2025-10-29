@@ -78,9 +78,15 @@
 
   # Referrer Policy
   Header set Referrer-Policy "strict-origin-when-cross-origin"
+  
+  # Copyright Notice
+  Header set X-Copyright "© 2025 Smart Tools Hub. All rights reserved."
 
   # Remove X-Powered-By header
   Header unset X-Powered-By
+  
+  # Content Security Policy
+  Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self' https://api.exchangerate-api.com https://www.google-analytics.com;"
 
   # Cache Control for HTML files
   <FilesMatch "\.(html|htm)$">
@@ -104,9 +110,16 @@
 Options -Indexes
 
 # Protect sensitive files
-<FilesMatch "(^\.htaccess|^\.env|composer\.json|composer\.lock|package\.json|package-lock\.json|\.git)">
+<FilesMatch "(^\.htaccess|^\.env|composer\.json|composer\.lock|package\.json|package-lock\.json|\.git|\.md|\.log|\.yml|\.yaml)">
   Require all denied
 </FilesMatch>
+
+# Prevent hotlinking of images
+<IfModule mod_rewrite.c>
+  RewriteCond %{HTTP_REFERER} !^$
+  RewriteCond %{HTTP_REFERER} !^https?://(www\.)?zouhourab1996-stack\.github\.io [NC]
+  RewriteRule \.(jpg|jpeg|png|gif|svg|webp)$ - [F,L]
+</IfModule>
 
 # Set default charset
 AddDefaultCharset UTF-8
