@@ -5,8 +5,6 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import SEO from "@/components/SEO";
-import { seoConfigs } from "@/config/seo";
 
 const CompoundInterest = () => {
   const [principal, setPrincipal] = useState("10000");
@@ -34,18 +32,8 @@ const CompoundInterest = () => {
     });
   };
 
-  const seoConfig = seoConfigs["/compound-interest"];
-
   return (
-    <>
-      <SEO
-        title={seoConfig.title}
-        description={seoConfig.description}
-        keywords={seoConfig.keywords}
-        canonical={seoConfig.canonical}
-        schema={seoConfig.schema}
-      />
-      <div className="container mx-auto px-4 py-12">
+    <div className="container mx-auto px-4 py-12">
       <div className="max-w-4xl mx-auto">
         <div className="mb-8">
           <h1 className="text-4xl font-bold mb-4 flex items-center">
@@ -182,7 +170,6 @@ const CompoundInterest = () => {
         </Card>
       </div>
     </div>
-    </>
   );
 };
 
