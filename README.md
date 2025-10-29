@@ -1,73 +1,64 @@
-# Welcome to your Lovable project
+# 🚀 Smart Tools Hub
 
-## Project info
+**30+ Free Online Tools | Modern, Fast & SEO Optimized**
 
-**URL**: https://lovable.dev/projects/2881f829-7964-4cb5-b7d1-0a00ad10d5d9
+A professional collection of calculators, converters, and productivity utilities built with React, TypeScript, and Tailwind CSS.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## ✨ Features
 
-**Use Lovable**
+- 🎯 **30+ Professional Tools** - Financial calculators, unit converters, productivity timers, and more
+- 🔍 **Smart Search** - Find tools instantly with live search
+- 📂 **Category Filters** - Browse by Financial, Calculators, Converters, Productivity, Utilities, Health, Practical
+- 🎨 **Modern Design** - Beautiful UI with smooth animations and gradient effects
+- 📱 **Fully Responsive** - Perfect on mobile, tablet, and desktop
+- ⚡ **Lightning Fast** - Built with Vite for optimal performance
+- 🔐 **100% Private** - All processing happens locally in your browser
+- 🌙 **Dark Theme** - Eye-friendly dark mode enabled
+- 🔍 **SEO Optimized** - Complete meta tags, JSON-LD, sitemap for search engines
+- 📄 **AdSense Ready** - Privacy Policy, Terms, Contact pages included
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/2881f829-7964-4cb5-b7d1-0a00ad10d5d9) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🚀 Quick Start
 
-**Use your preferred IDE**
+```bash
+# Install dependencies
+npm install
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📦 Deploy to GitHub Pages
 
-**Use GitHub Codespaces**
+1. Push code to GitHub
+2. Go to Settings → Pages → Select "GitHub Actions"
+3. Workflow automatically deploys on push to main
+4. Site live at: `https://[username].github.io/[repo-name]/`
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+See [DEPLOYMENT-GUIDE.md](DEPLOYMENT-GUIDE.md) for detailed instructions.
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## 🛠️ Tech Stack
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- React 18 + TypeScript
+- Vite 5
+- Tailwind CSS 3.4
+- shadcn/ui Components
+- React Router v6
+- Lucide Icons
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/2881f829-7964-4cb5-b7d1-0a00ad10d5d9) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Made with ❤️ | All donations support a community water well project in Tunisia 🌾

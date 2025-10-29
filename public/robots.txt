@@ -1,9 +1,7 @@
 User-agent: *
 Allow: /
-Disallow: /admin/
-Disallow: /*.json$
 
-Sitemap: https://mywebsite.com/sitemap.xml
+Sitemap: https://zouhourab1996-stack.github.io/web-utility-spark/sitemap.xml
 
 User-agent: Googlebot
 Allow: /

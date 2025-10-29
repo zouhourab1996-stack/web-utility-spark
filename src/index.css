@@ -102,7 +102,7 @@ All colors MUST be HSL.
 
 @layer utilities {
   .card-hover {
-    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:border-primary/50;
   }
 
   .gradient-primary {
@@ -111,5 +111,13 @@ All colors MUST be HSL.
 
   .gradient-accent {
     background: var(--gradient-accent);
+  }
+
+  .glass-effect {
+    @apply bg-card/50 backdrop-blur-md border border-border/50;
+  }
+
+  .smooth-transition {
+    transition: var(--transition-smooth);
   }
 }

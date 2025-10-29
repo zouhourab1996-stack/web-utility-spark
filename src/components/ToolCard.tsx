@@ -11,14 +11,15 @@ interface ToolCardProps {
 
 const ToolCard = ({ title, description, icon: Icon, path }: ToolCardProps) => {
   return (
-    <Link to={path} className="block">
-      <Card className="card-hover cursor-pointer h-full">
-        <CardHeader>
-          <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-            <Icon className="w-6 h-6 text-primary" />
+    <Link to={path} className="block group">
+      <Card className="card-hover cursor-pointer h-full relative overflow-hidden bg-card border-border">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        <CardHeader className="relative z-10">
+          <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center mb-4 group-hover:scale-110 smooth-transition">
+            <Icon className="w-7 h-7 text-primary group-hover:text-accent smooth-transition" />
           </div>
-          <CardTitle className="text-xl">{title}</CardTitle>
-          <CardDescription className="text-sm">{description}</CardDescription>
+          <CardTitle className="text-xl group-hover:text-primary smooth-transition">{title}</CardTitle>
+          <CardDescription className="text-sm leading-relaxed">{description}</CardDescription>
         </CardHeader>
       </Card>
     </Link>
