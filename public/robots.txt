@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://zouhourab1996-stack.github.io/web-utility-spark/sitemap.xml
+Sitemap: https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/sitemap.xml
 
 User-agent: Googlebot
 Allow: /

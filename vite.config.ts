@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/web-utility-spark/",
+  base: "/free-ads-tools-hub-classifed/",
   server: {
     host: "::",
     port: 8080,

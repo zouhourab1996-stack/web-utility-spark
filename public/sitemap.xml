@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Home Page -->
   <url>
-    <loc>https://zouhourab1996-stack.github.io/web-utility-spark/</loc>
+    <loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/</loc>
     <lastmod>2025-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -10,13 +10,13 @@
 
   <!-- Free Ads Section -->
   <url>
-    <loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/free-ads</loc>
+    <loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/free-ads</loc>
     <lastmod>2025-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/free-ads/post</loc>
+    <loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/free-ads/post</loc>
     <lastmod>2025-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -24,125 +24,125 @@
   
   <!-- Games Hub -->
   <url>
-    <loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games</loc>
+    <loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games</loc>
     <lastmod>2025-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <!-- Puzzle Games -->
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/number-slide</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/color-match</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/word-scramble</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/sudoku</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/maze-runner</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/connect-dots</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/pattern-finder</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/block-puzzle</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/math-pyramid</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/light-bulbs</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/number-slide</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/color-match</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/word-scramble</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/sudoku</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/maze-runner</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/connect-dots</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/pattern-finder</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/block-puzzle</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/math-pyramid</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/light-bulbs</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- Arcade Games -->
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/reaction-time</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/balloon-pop</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/falling-blocks</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/typing-speed</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/color-rush</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/space-dodger</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/number-hunt</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/rhythm-tap</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/arrow-keys</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/fruit-ninja</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/reaction-time</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/balloon-pop</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/falling-blocks</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/typing-speed</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/color-rush</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/space-dodger</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/number-hunt</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/rhythm-tap</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/arrow-keys</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/fruit-ninja</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- Quiz Games -->
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/trivia-challenge</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/math-quiz</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/flag-quiz</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/capital-quiz</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/true-false</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/emoji-quiz</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/spell-check</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/history-quiz</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/science-quiz</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/riddles</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/trivia-challenge</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/math-quiz</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/flag-quiz</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/capital-quiz</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/true-false</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/emoji-quiz</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/spell-check</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/history-quiz</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/science-quiz</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/riddles</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- Clicker Games -->
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/cookie-clicker</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/gem-miner</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/planet-builder</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/tree-grower</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/bubble-clicker</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/cookie-clicker</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/gem-miner</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/planet-builder</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/tree-grower</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/bubble-clicker</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- Memory Games -->
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/memory-cards</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/simon-says</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/number-memory</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/visual-memory</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/sequence-recall</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/memory-cards</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/simon-says</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/number-memory</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/visual-memory</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/sequence-recall</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- Strategy Games -->
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/tic-tac-toe</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/connect-four</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/nim-game</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/tower-defense</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/chess-puzzles</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/tic-tac-toe</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/connect-four</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/nim-game</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/tower-defense</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/chess-puzzles</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- Casual Games -->
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/coin-flip</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/dice-roller</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/fortune-wheel</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/color-picker</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/games/magic-8ball</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/coin-flip</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/dice-roller</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/fortune-wheel</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/color-picker</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/games/magic-8ball</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- Financial Tools -->
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/compound-interest</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/loan-calculator</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/savings-calculator</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/percentage-calculator</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/currency-converter</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/currency-rounder</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/price-comparator</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/compound-interest</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/loan-calculator</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/savings-calculator</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/percentage-calculator</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/currency-converter</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/currency-rounder</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/price-comparator</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- Health & Fitness -->
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/bmi-calculator</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/age-calculator</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/bmi-calculator</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/age-calculator</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- Converters -->
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/unit-converter</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/natural-unit-converter</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/base64-converter</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/text-to-slug</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/unit-converter</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/natural-unit-converter</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/base64-converter</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/text-to-slug</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
   <!-- Productivity Tools -->
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/stopwatch</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/pomodoro-timer</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/word-counter</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/password-generator</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/qr-generator</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/donation-qr-builder</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/meeting-time-finder</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/holiday-planner</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/stopwatch</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/pomodoro-timer</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/word-counter</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/password-generator</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/qr-generator</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/donation-qr-builder</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/meeting-time-finder</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/holiday-planner</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- Practical Tools -->
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/recipe-scaler</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/pantry-tracker</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/recipe-scaler</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/pantry-tracker</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
   <!-- Utilities -->
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/random-number</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/random-name-picker</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/image-compressor</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/text-to-speech</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/accessibility-checker</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/policy-generator</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/random-number</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/random-name-picker</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/image-compressor</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/text-to-speech</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/accessibility-checker</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/policy-generator</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
   <!-- Calculators -->
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/gpa-calculator</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/gpa-calculator</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- Settings -->
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/settings</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/settings</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
 
   <!-- Legal & Contact Pages -->
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/privacy-policy</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/terms-of-service</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://zouhourab1996-stack.github.io/web-utility-spark/#/contact</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/privacy-policy</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/terms-of-service</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/contact</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
 </urlset>
