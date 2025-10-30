@@ -93,7 +93,7 @@ Coin Flip, Dice Roller, Fortune Wheel, Color Picker, Magic 8-Ball
 
 ## 💰 Support the Project
 
-**Donations help complete a farmer's well in rural Tunisia**
+**Donations help complete a farmer's well in rural Tunisia🇹🇳**
 
 - **PayPal**: anistouati74@gmail.com
 - **USDT (BNB Chain)**: 0x63e8f2e80c81523Cc896f44743Da19aFbd8D04eD
