@@ -2,13 +2,17 @@
 import { createClient } from '@supabase/supabase-js';
 import type { Database } from './types';
 
-const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL || "https://tjfrpmpqkmypnmodrtgo.supabase.co";
-const SUPABASE_PUBLISHABLE_KEY = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY || "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRqZnJwbXBxa215cG5tb2RydGdvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjE4MzM1NjksImV4cCI6MjA3NzQwOTU2OX0.Y6ngb4Nytd96PqP8oqdoIiNykaoRPkeSmgFGKkYZW6w";
+const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL?.trim() || "https://tjfrpmpqkmypnmodrtgo.supabase.co";
+const SUPABASE_PUBLISHABLE_KEY = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY?.trim() || "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRqZnJwbXBxa215cG5tb2RydGdvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjE4MzM1NjksImV4cCI6MjA3NzQwOTU2OX0.Y6ngb4Nytd96PqP8oqdoIiNykaoRPkeSmgFGKkYZW6w";
+
+// Ensure values are never empty
+const supabaseUrl = SUPABASE_URL || "https://tjfrpmpqkmypnmodrtgo.supabase.co";
+const supabaseKey = SUPABASE_PUBLISHABLE_KEY || "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRqZnJwbXBxa215cG5tb2RydGdvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjE4MzM1NjksImV4cCI6MjA3NzQwOTU2OX0.Y6ngb4Nytd96PqP8oqdoIiNykaoRPkeSmgFGKkYZW6w";
 
 // Import the supabase client like this:
 // import { supabase } from "@/integrations/supabase/client";
 
-export const supabase = createClient<Database>(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY, {
+export const supabase = createClient<Database>(supabaseUrl, supabaseKey, {
   auth: {
     storage: localStorage,
     persistSession: true,
