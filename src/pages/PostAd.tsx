@@ -84,11 +84,21 @@ export default function PostAd() {
       // Upload images to Cloudinary
       let imageUrls: string[] = [];
       if (images.length > 0) {
-        toast({
-          title: "Uploading images...",
-          description: "Please wait while we upload your images",
-        });
-        imageUrls = await uploadMultipleImages(images);
+        try {
+          toast({
+            title: "Uploading images...",
+            description: "Please wait while we upload your images",
+          });
+          imageUrls = await uploadMultipleImages(images);
+        } catch (uploadError) {
+          console.error("Image upload failed:", uploadError);
+          toast({
+            title: "Image upload failed",
+            description: "Posting ad without images. You can add images later.",
+            variant: "default",
+          });
+          // Continue without images
+        }
       }
 
       // Save ad to IndexedDB
@@ -108,7 +118,9 @@ export default function PostAd() {
 
       toast({
         title: "Ad posted successfully!",
-        description: "Your ad is now live and visible to everyone",
+        description: imageUrls.length > 0 
+          ? "Your ad is now live with images" 
+          : "Your ad is now live",
       });
 
       navigate(`/free-ads/${ad.id}`);
@@ -116,7 +128,7 @@ export default function PostAd() {
       console.error("Failed to post ad:", error);
       toast({
         title: "Failed to post ad",
-        description: "Please try again later",
+        description: error instanceof Error ? error.message : "Please try again later",
         variant: "destructive",
       });
     } finally {
