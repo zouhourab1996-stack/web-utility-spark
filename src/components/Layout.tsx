@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Calculator, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import ReferralBadge from "./ReferralBadge";
 
 interface LayoutProps {
   children: ReactNode;
@@ -51,6 +52,9 @@ const Layout = ({ children }: LayoutProps) => {
 
   return (
     <div className="min-h-screen flex flex-col">
+      {/* Referral Badge */}
+      <ReferralBadge />
+      
       {/* Navigation */}
       <nav className="bg-card border-b border-border sticky top-0 z-50 backdrop-blur-sm bg-card/95">
         <div className="container mx-auto px-4">

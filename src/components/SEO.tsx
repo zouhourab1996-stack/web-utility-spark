@@ -13,7 +13,9 @@ const SEO = ({ title, description, keywords, canonical, ogImage, schema }: SEOPr
   const baseUrl = "https://zouhourab1996-stack.github.io/web-utility-spark";
   const fullTitle = title.includes("Smart Tools Hub") ? title : `${title} | Smart Tools Hub`;
   const defaultImage = `${baseUrl}/og-image.png`;
-  const imageUrl = ogImage || defaultImage;
+  
+  // Support custom OG images per page/tool
+  const imageUrl = ogImage ? (ogImage.startsWith('http') ? ogImage : `${baseUrl}${ogImage}`) : defaultImage;
   const canonicalUrl = canonical ? `${baseUrl}${canonical}` : baseUrl;
 
   return (
