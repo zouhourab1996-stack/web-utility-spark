@@ -3,6 +3,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { HashRouter, Routes, Route } from "react-router-dom";
+import { Suspense } from "react";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import CompoundInterest from "./pages/CompoundInterest";
@@ -41,14 +42,39 @@ import ContactUs from "./pages/ContactUs";
 import NotFound from "./pages/NotFound";
 import GamesHub from "./pages/GamesHub";
 import SettingsPage from "./pages/SettingsPage";
-// Game imports
-import NumberSlide from "./pages/games/NumberSlide";
-import ColorMatch from "./pages/games/ColorMatch";
-import ReactionTime from "./pages/games/ReactionTime";
-import BalloonPop from "./pages/games/BalloonPop";
-import CookieClicker from "./pages/games/CookieClicker";
-import TicTacToe from "./pages/games/TicTacToe";
-import MemoryCards from "./pages/games/MemoryCards";
+// Game imports - Lazy loaded for performance
+import { lazy } from "react";
+const NumberSlide = lazy(() => import("./pages/games/NumberSlide"));
+const ColorMatch = lazy(() => import("./pages/games/ColorMatch"));
+const ReactionTime = lazy(() => import("./pages/games/ReactionTime"));
+const BalloonPop = lazy(() => import("./pages/games/BalloonPop"));
+const CookieClicker = lazy(() => import("./pages/games/CookieClicker"));
+const TicTacToe = lazy(() => import("./pages/games/TicTacToe"));
+const MemoryCards = lazy(() => import("./pages/games/MemoryCards"));
+const WordScramble = lazy(() => import("./pages/games/WordScramble"));
+const Sudoku = lazy(() => import("./pages/games/Sudoku"));
+const MazeRunner = lazy(() => import("./pages/games/MazeRunner"));
+const ConnectDots = lazy(() => import("./pages/games/ConnectDots"));
+const PatternFinder = lazy(() => import("./pages/games/PatternFinder"));
+const BlockPuzzle = lazy(() => import("./pages/games/BlockPuzzle"));
+const MathPyramid = lazy(() => import("./pages/games/MathPyramid"));
+const LightBulbs = lazy(() => import("./pages/games/LightBulbs"));
+const FallingBlocks = lazy(() => import("./pages/games/FallingBlocks"));
+const TypingSpeed = lazy(() => import("./pages/games/TypingSpeed"));
+const ColorRush = lazy(() => import("./pages/games/ColorRush"));
+const SpaceDodger = lazy(() => import("./pages/games/SpaceDodger"));
+const NumberHunt = lazy(() => import("./pages/games/NumberHunt"));
+const RhythmTap = lazy(() => import("./pages/games/RhythmTap"));
+const ArrowKeys = lazy(() => import("./pages/games/ArrowKeys"));
+const FruitNinja = lazy(() => import("./pages/games/FruitNinja"));
+const TriviaChallenge = lazy(() => import("./pages/games/TriviaChallenge"));
+const MathQuiz = lazy(() => import("./pages/games/MathQuiz"));
+const FlagQuiz = lazy(() => import("./pages/games/FlagQuiz"));
+const CapitalQuiz = lazy(() => import("./pages/games/CapitalQuiz"));
+const TrueFalse = lazy(() => import("./pages/games/TrueFalse"));
+const EmojiQuiz = lazy(() => import("./pages/games/EmojiQuiz"));
+const SpellCheck = lazy(() => import("./pages/games/SpellCheck"));
+const HistoryQuiz = lazy(() => import("./pages/games/HistoryQuiz"));
 
 const queryClient = new QueryClient();
 
@@ -59,6 +85,7 @@ const App = () => (
       <Sonner />
       <HashRouter>
         <Layout>
+          <Suspense fallback={<div className="flex items-center justify-center min-h-screen">Loading...</div>}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/compound-interest" element={<CompoundInterest />} />
@@ -103,9 +130,34 @@ const App = () => (
             <Route path="/games/cookie-clicker" element={<CookieClicker />} />
             <Route path="/games/tic-tac-toe" element={<TicTacToe />} />
             <Route path="/games/memory-cards" element={<MemoryCards />} />
+            <Route path="/games/word-scramble" element={<WordScramble />} />
+            <Route path="/games/sudoku" element={<Sudoku />} />
+            <Route path="/games/maze-runner" element={<MazeRunner />} />
+            <Route path="/games/connect-dots" element={<ConnectDots />} />
+            <Route path="/games/pattern-finder" element={<PatternFinder />} />
+            <Route path="/games/block-puzzle" element={<BlockPuzzle />} />
+            <Route path="/games/math-pyramid" element={<MathPyramid />} />
+            <Route path="/games/light-bulbs" element={<LightBulbs />} />
+            <Route path="/games/falling-blocks" element={<FallingBlocks />} />
+            <Route path="/games/typing-speed" element={<TypingSpeed />} />
+            <Route path="/games/color-rush" element={<ColorRush />} />
+            <Route path="/games/space-dodger" element={<SpaceDodger />} />
+            <Route path="/games/number-hunt" element={<NumberHunt />} />
+            <Route path="/games/rhythm-tap" element={<RhythmTap />} />
+            <Route path="/games/arrow-keys" element={<ArrowKeys />} />
+            <Route path="/games/fruit-ninja" element={<FruitNinja />} />
+            <Route path="/games/trivia-challenge" element={<TriviaChallenge />} />
+            <Route path="/games/math-quiz" element={<MathQuiz />} />
+            <Route path="/games/flag-quiz" element={<FlagQuiz />} />
+            <Route path="/games/capital-quiz" element={<CapitalQuiz />} />
+            <Route path="/games/true-false" element={<TrueFalse />} />
+            <Route path="/games/emoji-quiz" element={<EmojiQuiz />} />
+            <Route path="/games/spell-check" element={<SpellCheck />} />
+            <Route path="/games/history-quiz" element={<HistoryQuiz />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
+          </Suspense>
         </Layout>
       </HashRouter>
     </TooltipProvider>
