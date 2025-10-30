@@ -39,6 +39,16 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 import ContactUs from "./pages/ContactUs";
 import NotFound from "./pages/NotFound";
+import GamesHub from "./pages/GamesHub";
+import SettingsPage from "./pages/SettingsPage";
+// Game imports
+import NumberSlide from "./pages/games/NumberSlide";
+import ColorMatch from "./pages/games/ColorMatch";
+import ReactionTime from "./pages/games/ReactionTime";
+import BalloonPop from "./pages/games/BalloonPop";
+import CookieClicker from "./pages/games/CookieClicker";
+import TicTacToe from "./pages/games/TicTacToe";
+import MemoryCards from "./pages/games/MemoryCards";
 
 const queryClient = new QueryClient();
 
@@ -84,6 +94,15 @@ const App = () => (
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
             <Route path="/contact" element={<ContactUs />} />
+            <Route path="/settings" element={<SettingsPage />} />
+            <Route path="/games" element={<GamesHub />} />
+            <Route path="/games/number-slide" element={<NumberSlide />} />
+            <Route path="/games/color-match" element={<ColorMatch />} />
+            <Route path="/games/reaction-time" element={<ReactionTime />} />
+            <Route path="/games/balloon-pop" element={<BalloonPop />} />
+            <Route path="/games/cookie-clicker" element={<CookieClicker />} />
+            <Route path="/games/tic-tac-toe" element={<TicTacToe />} />
+            <Route path="/games/memory-cards" element={<MemoryCards />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

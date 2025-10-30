@@ -1,4 +1,4 @@
-import { Calculator, DollarSign, PiggyBank, Timer, Ruler, Scale, Calendar, Currency, Lock, FileText, QrCode, Dices, Percent, ImageIcon, Volume2, GraduationCap, FileCode, Shuffle, ChefHat, ShoppingCart, Repeat, Clock, Heart, Apple, Eye, Settings, Plane, Type, Coins, Search, TrendingUp, Activity, Wrench, Zap } from "lucide-react";
+import { Calculator, DollarSign, PiggyBank, Timer, Ruler, Scale, Calendar, Currency, Lock, FileText, QrCode, Dices, Percent, ImageIcon, Volume2, GraduationCap, FileCode, Shuffle, ChefHat, ShoppingCart, Repeat, Clock, Heart, Apple, Eye, Settings, Plane, Type, Coins, Search, TrendingUp, Activity, Wrench, Zap, Gamepad2 } from "lucide-react";
 import { useState, useMemo } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -221,6 +221,13 @@ const Home = () => {
       icon: Coins,
       path: "/currency-rounder",
       category: "financial",
+    },
+    {
+      title: "Games Hub",
+      description: "Play 50+ free browser games - puzzles, arcade, quiz & more!",
+      icon: Gamepad2,
+      path: "/games",
+      category: "utilities",
     },
   ];
 
