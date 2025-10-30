@@ -3,35 +3,26 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 
-// ✅ إعداد GitHub Pages
-// تأكد من أن المسار base مطابق تمامًا لاسم المستودع
+// https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/web-utility-spark/", // 👈 هذا أهم سطر
-
+  base: "/web-utility-spark/",
   server: {
     host: "::",
     port: 8080,
   },
-
-  plugins: [
-    react(),
-    mode === "development" && componentTagger(),
-  ].filter(Boolean),
-
+  plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
   },
-
   build: {
-    outDir: "dist",
-    minify: "terser",
+    minify: 'terser',
     terserOptions: {
       compress: {
         drop_console: true,
         drop_debugger: true,
-        pure_funcs: ["console.log", "console.info", "console.debug"],
+        pure_funcs: ['console.log', 'console.info', 'console.debug'],
       },
       mangle: {
         toplevel: true,
@@ -44,19 +35,14 @@ export default defineConfig(({ mode }) => ({
     rollupOptions: {
       output: {
         manualChunks: {
-          "react-vendor": ["react", "react-dom", "react-router-dom"],
-          "ui-vendor": [
-            "@radix-ui/react-dialog",
-            "@radix-ui/react-dropdown-menu",
-            "@radix-ui/react-select",
-          ],
+          'react-vendor': ['react', 'react-dom', 'react-router-dom'],
+          'ui-vendor': ['@radix-ui/react-dialog', '@radix-ui/react-dropdown-menu', '@radix-ui/react-select'],
         },
       },
     },
     chunkSizeWarningLimit: 1000,
   },
-
   optimizeDeps: {
-    include: ["react", "react-dom", "react-router-dom"],
+    include: ['react', 'react-dom', 'react-router-dom'],
   },
 }));
