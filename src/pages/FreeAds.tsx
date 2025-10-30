@@ -85,7 +85,7 @@ export default function FreeAds() {
         title="Free Ads - Post & Browse Classifieds"
         description="Post free classified ads instantly. Buy, sell, trade - electronics, furniture, vehicles, real estate, jobs, services and more. No registration required."
         keywords="free ads, classifieds, post free ad, buy sell, online marketplace, free classifieds, advertise free"
-        canonical="https://zouhourab1996-stack.github.io/web-utility-spark/#/free-ads"
+        canonical="https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed/#/free-ads"
       />
 
       <div className="container mx-auto px-4 py-8 max-w-7xl">
