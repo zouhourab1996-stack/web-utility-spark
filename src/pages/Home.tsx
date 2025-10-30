@@ -1,5 +1,6 @@
 import { Calculator, DollarSign, PiggyBank, Timer, Ruler, Scale, Calendar, Currency, Lock, FileText, QrCode, Dices, Percent, ImageIcon, Volume2, GraduationCap, FileCode, Shuffle, ChefHat, ShoppingCart, Repeat, Clock, Heart, Apple, Eye, Settings, Plane, Type, Coins, Search, TrendingUp, Activity, Wrench, Zap, Gamepad2 } from "lucide-react";
 import { useState, useMemo } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import ToolCard from "@/components/ToolCard";
@@ -358,8 +359,8 @@ const Home = () => {
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
               {/* Games Hub Card */}
-              <a
-                href="/#/games"
+              <Link
+                to="/games"
                 className="group relative overflow-hidden rounded-xl bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/20 p-8 hover:border-purple-500/40 transition-all duration-300 hover:shadow-lg hover:scale-[1.02]"
               >
                 <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-purple-500/20 to-transparent rounded-full blur-2xl" />
@@ -376,11 +377,11 @@ const Home = () => {
                     <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
-              </a>
+              </Link>
 
               {/* Free Ads Card */}
-              <a
-                href="/#/free-ads"
+              <Link
+                to="/free-ads"
                 className="group relative overflow-hidden rounded-xl bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border border-blue-500/20 p-8 hover:border-blue-500/40 transition-all duration-300 hover:shadow-lg hover:scale-[1.02]"
               >
                 <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-500/20 to-transparent rounded-full blur-2xl" />
@@ -397,7 +398,7 @@ const Home = () => {
                     <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </section>
