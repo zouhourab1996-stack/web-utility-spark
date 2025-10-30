@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import { Suspense, lazy } from "react";
 import Layout from "./components/Layout";
+import ErrorBoundary from "./components/ErrorBoundary";
 import Home from "./pages/Home";
 // Lazy load all tool pages for better performance
 const CompoundInterest = lazy(() => import("./pages/CompoundInterest"));
@@ -110,8 +111,9 @@ const App = () => (
       <Sonner />
       <HashRouter>
         <Layout>
-          <Suspense fallback={<div className="flex items-center justify-center min-h-screen">Loading...</div>}>
-          <Routes>
+          <ErrorBoundary>
+            <Suspense fallback={<div className="flex items-center justify-center min-h-screen">Loading...</div>}>
+            <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/compound-interest" element={<CompoundInterest />} />
             <Route path="/loan-calculator" element={<LoanCalculator />} />
@@ -209,6 +211,7 @@ const App = () => (
             <Route path="*" element={<NotFound />} />
           </Routes>
           </Suspense>
+          </ErrorBoundary>
         </Layout>
       </HashRouter>
     </TooltipProvider>

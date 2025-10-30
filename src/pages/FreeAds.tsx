@@ -37,6 +37,13 @@ export default function FreeAds() {
 
   const loadAds = async () => {
     try {
+      // Check if Supabase client is properly initialized
+      if (!supabase) {
+        console.warn("Supabase client not initialized");
+        setLoading(false);
+        return;
+      }
+
       const { data, error } = await supabase
         .from('ads')
         .select('*')
