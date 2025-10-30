@@ -197,6 +197,12 @@ const App = () => (
             <Route path="/games/fortune-wheel" element={<FortuneWheel />} />
             <Route path="/games/color-picker" element={<ColorPicker />} />
             <Route path="/games/magic-8ball" element={<Magic8Ball />} />
+            
+            {/* Free Ads Routes */}
+            <Route path="/free-ads" element={<FreeAds />} />
+            <Route path="/free-ads/post" element={<PostAd />} />
+            <Route path="/free-ads/:id" element={<AdDetail />} />
+            
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
