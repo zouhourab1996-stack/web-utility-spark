@@ -75,6 +75,25 @@ const TrueFalse = lazy(() => import("./pages/games/TrueFalse"));
 const EmojiQuiz = lazy(() => import("./pages/games/EmojiQuiz"));
 const SpellCheck = lazy(() => import("./pages/games/SpellCheck"));
 const HistoryQuiz = lazy(() => import("./pages/games/HistoryQuiz"));
+const ScienceQuiz = lazy(() => import("./pages/games/ScienceQuiz"));
+const Riddles = lazy(() => import("./pages/games/Riddles"));
+const GemMiner = lazy(() => import("./pages/games/GemMiner"));
+const PlanetBuilder = lazy(() => import("./pages/games/PlanetBuilder"));
+const TreeGrower = lazy(() => import("./pages/games/TreeGrower"));
+const BubbleClicker = lazy(() => import("./pages/games/BubbleClicker"));
+const SimonSays = lazy(() => import("./pages/games/SimonSays"));
+const NumberMemory = lazy(() => import("./pages/games/NumberMemory"));
+const VisualMemory = lazy(() => import("./pages/games/VisualMemory"));
+const SequenceRecall = lazy(() => import("./pages/games/SequenceRecall"));
+const ConnectFour = lazy(() => import("./pages/games/ConnectFour"));
+const NimGame = lazy(() => import("./pages/games/NimGame"));
+const TowerDefense = lazy(() => import("./pages/games/TowerDefense"));
+const ChessPuzzles = lazy(() => import("./pages/games/ChessPuzzles"));
+const CoinFlip = lazy(() => import("./pages/games/CoinFlip"));
+const DiceRoller = lazy(() => import("./pages/games/DiceRoller"));
+const FortuneWheel = lazy(() => import("./pages/games/FortuneWheel"));
+const ColorPicker = lazy(() => import("./pages/games/ColorPicker"));
+const Magic8Ball = lazy(() => import("./pages/games/Magic8Ball"));
 
 const queryClient = new QueryClient();
 
@@ -154,6 +173,25 @@ const App = () => (
             <Route path="/games/emoji-quiz" element={<EmojiQuiz />} />
             <Route path="/games/spell-check" element={<SpellCheck />} />
             <Route path="/games/history-quiz" element={<HistoryQuiz />} />
+            <Route path="/games/science-quiz" element={<ScienceQuiz />} />
+            <Route path="/games/riddles" element={<Riddles />} />
+            <Route path="/games/gem-miner" element={<GemMiner />} />
+            <Route path="/games/planet-builder" element={<PlanetBuilder />} />
+            <Route path="/games/tree-grower" element={<TreeGrower />} />
+            <Route path="/games/bubble-clicker" element={<BubbleClicker />} />
+            <Route path="/games/simon-says" element={<SimonSays />} />
+            <Route path="/games/number-memory" element={<NumberMemory />} />
+            <Route path="/games/visual-memory" element={<VisualMemory />} />
+            <Route path="/games/sequence-recall" element={<SequenceRecall />} />
+            <Route path="/games/connect-four" element={<ConnectFour />} />
+            <Route path="/games/nim-game" element={<NimGame />} />
+            <Route path="/games/tower-defense" element={<TowerDefense />} />
+            <Route path="/games/chess-puzzles" element={<ChessPuzzles />} />
+            <Route path="/games/coin-flip" element={<CoinFlip />} />
+            <Route path="/games/dice-roller" element={<DiceRoller />} />
+            <Route path="/games/fortune-wheel" element={<FortuneWheel />} />
+            <Route path="/games/color-picker" element={<ColorPicker />} />
+            <Route path="/games/magic-8ball" element={<Magic8Ball />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
