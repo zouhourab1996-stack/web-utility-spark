@@ -9,8 +9,8 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { useToast } from "@/hooks/use-toast";
-import { saveAd, Ad } from "@/utils/indexedDB";
 import { uploadMultipleImages } from "@/utils/cloudinary";
+import { supabase } from "@/integrations/supabase/client";
 import { Upload, X, Loader2 } from "lucide-react";
 import SEO from "@/components/SEO";
 
@@ -101,20 +101,21 @@ export default function PostAd() {
         }
       }
 
-      // Save ad to IndexedDB
-      const ad: Ad = {
-        id: Date.now().toString(),
-        title: values.title,
-        description: values.description,
-        category: values.category,
-        price: values.price,
-        location: values.location,
-        images: imageUrls,
-        createdAt: Date.now(),
-        views: 0,
-      };
+      // Save ad to database
+      const { data: ad, error: dbError } = await supabase
+        .from('ads')
+        .insert({
+          title: values.title,
+          description: values.description,
+          category: values.category,
+          price: values.price,
+          location: values.location,
+          images: imageUrls,
+        })
+        .select()
+        .single();
 
-      await saveAd(ad);
+      if (dbError) throw dbError;
 
       toast({
         title: "Ad posted successfully!",
@@ -123,7 +124,7 @@ export default function PostAd() {
           : "Your ad is now live",
       });
 
-      navigate(`/free-ads/${ad.id}`);
+      navigate(`/free-ads/${ad?.id}`);
     } catch (error) {
       console.error("Failed to post ad:", error);
       toast({

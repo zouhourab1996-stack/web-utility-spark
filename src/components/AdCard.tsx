@@ -2,15 +2,26 @@ import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge";
 import { MapPin, Eye, Calendar } from "lucide-react";
 import { Link } from "react-router-dom";
-import { Ad } from "@/utils/indexedDB";
 import { getOptimizedImageUrl } from "@/utils/cloudinary";
+
+interface Ad {
+  id: string;
+  title: string;
+  description: string;
+  category: string;
+  price: string;
+  location: string;
+  images: string[];
+  created_at: string;
+  views: number;
+}
 
 interface AdCardProps {
   ad: Ad;
 }
 
 export function AdCard({ ad }: AdCardProps) {
-  const formattedDate = new Date(ad.createdAt).toLocaleDateString();
+  const formattedDate = new Date(ad.created_at).toLocaleDateString();
   const imageUrl = ad.images[0] ? getOptimizedImageUrl(ad.images[0], 400) : '/placeholder.svg';
 
   return (

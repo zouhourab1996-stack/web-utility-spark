@@ -3,11 +3,23 @@ import { useParams, useNavigate, Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
-import { getAdById, updateAdViews, Ad } from "@/utils/indexedDB";
+import { supabase } from "@/integrations/supabase/client";
 import { getOptimizedImageUrl } from "@/utils/cloudinary";
 import { ArrowLeft, MapPin, Calendar, Eye, Share2, Facebook, Twitter } from "lucide-react";
 import SEO from "@/components/SEO";
 import { useToast } from "@/hooks/use-toast";
+
+interface Ad {
+  id: string;
+  title: string;
+  description: string;
+  category: string;
+  price: string;
+  location: string;
+  images: string[];
+  created_at: string;
+  views: number;
+}
 
 export default function AdDetail() {
   const { id } = useParams<{ id: string }>();
@@ -24,13 +36,24 @@ export default function AdDetail() {
   const loadAd = async () => {
     if (!id) return;
     try {
-      const adData = await getAdById(id);
-      if (adData) {
-        setAd(adData);
-        await updateAdViews(id);
-      } else {
+      const { data: adData, error } = await supabase
+        .from('ads')
+        .select('*')
+        .eq('id', id)
+        .single();
+
+      if (error || !adData) {
         navigate("/free-ads");
+        return;
       }
+
+      setAd(adData);
+
+      // Increment views
+      await supabase
+        .from('ads')
+        .update({ views: (adData.views || 0) + 1 })
+        .eq('id', id);
     } catch (error) {
       console.error("Failed to load ad:", error);
       navigate("/free-ads");
@@ -73,7 +96,7 @@ export default function AdDetail() {
     );
   }
 
-  const formattedDate = new Date(ad.createdAt).toLocaleDateString('en-US', {
+  const formattedDate = new Date(ad.created_at).toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric'

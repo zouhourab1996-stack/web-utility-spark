@@ -2,10 +2,22 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Plus } from "lucide-react";
-import { getAllAds, Ad } from "@/utils/indexedDB";
+import { supabase } from "@/integrations/supabase/client";
 import { AdCard } from "@/components/AdCard";
 import { AdFilters } from "@/components/AdFilters";
 import SEO from "@/components/SEO";
+
+interface Ad {
+  id: string;
+  title: string;
+  description: string;
+  category: string;
+  price: string;
+  location: string;
+  images: string[];
+  created_at: string;
+  views: number;
+}
 
 export default function FreeAds() {
   const [ads, setAds] = useState<Ad[]>([]);
@@ -25,8 +37,13 @@ export default function FreeAds() {
 
   const loadAds = async () => {
     try {
-      const allAds = await getAllAds();
-      setAds(allAds);
+      const { data, error } = await supabase
+        .from('ads')
+        .select('*')
+        .order('created_at', { ascending: false });
+      
+      if (error) throw error;
+      setAds(data || []);
     } catch (error) {
       console.error("Failed to load ads:", error);
     } finally {
@@ -53,8 +70,8 @@ export default function FreeAds() {
 
     // Sort
     result.sort((a, b) => {
-      if (sortBy === "newest") return b.createdAt - a.createdAt;
-      if (sortBy === "oldest") return a.createdAt - b.createdAt;
+      if (sortBy === "newest") return new Date(b.created_at).getTime() - new Date(a.created_at).getTime();
+      if (sortBy === "oldest") return new Date(a.created_at).getTime() - new Date(b.created_at).getTime();
       if (sortBy === "views") return (b.views || 0) - (a.views || 0);
       return 0;
     });
