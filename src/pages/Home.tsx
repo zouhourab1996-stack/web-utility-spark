@@ -222,13 +222,6 @@ const Home = () => {
       path: "/currency-rounder",
       category: "financial",
     },
-    {
-      title: "Games Hub",
-      description: "Play 50+ free browser games - puzzles, arcade, quiz & more!",
-      icon: Gamepad2,
-      path: "/games",
-      category: "utilities",
-    },
   ];
 
   const categories = [
@@ -356,6 +349,55 @@ const Home = () => {
                   </Button>
                 );
               })}
+            </div>
+          </div>
+        </section>
+
+        {/* Featured Sections - Games & Free Ads */}
+        <section className="py-12 md:py-16 bg-gradient-to-b from-secondary/10 to-background">
+          <div className="container mx-auto px-4">
+            <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+              {/* Games Hub Card */}
+              <a
+                href="/#/games"
+                className="group relative overflow-hidden rounded-xl bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/20 p-8 hover:border-purple-500/40 transition-all duration-300 hover:shadow-lg hover:scale-[1.02]"
+              >
+                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-purple-500/20 to-transparent rounded-full blur-2xl" />
+                <div className="relative">
+                  <Gamepad2 className="w-12 h-12 mb-4 text-purple-500" />
+                  <h3 className="text-2xl font-bold mb-2 group-hover:text-purple-500 transition-colors">
+                    Games Hub
+                  </h3>
+                  <p className="text-muted-foreground mb-4">
+                    Play 50+ free browser games - puzzles, arcade, memory, quiz & more!
+                  </p>
+                  <div className="flex items-center text-sm font-medium text-purple-500">
+                    Explore Games 
+                    <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
+                  </div>
+                </div>
+              </a>
+
+              {/* Free Ads Card */}
+              <a
+                href="/#/free-ads"
+                className="group relative overflow-hidden rounded-xl bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border border-blue-500/20 p-8 hover:border-blue-500/40 transition-all duration-300 hover:shadow-lg hover:scale-[1.02]"
+              >
+                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-500/20 to-transparent rounded-full blur-2xl" />
+                <div className="relative">
+                  <ShoppingCart className="w-12 h-12 mb-4 text-blue-500" />
+                  <h3 className="text-2xl font-bold mb-2 group-hover:text-blue-500 transition-colors">
+                    Free Ads
+                  </h3>
+                  <p className="text-muted-foreground mb-4">
+                    Post and browse free classified ads - buy, sell, and find local deals!
+                  </p>
+                  <div className="flex items-center text-sm font-medium text-blue-500">
+                    Browse Ads 
+                    <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
         </section>

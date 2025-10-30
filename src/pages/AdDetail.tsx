@@ -6,7 +6,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { getAdById, updateAdViews, Ad } from "@/utils/indexedDB";
 import { getOptimizedImageUrl } from "@/utils/cloudinary";
 import { ArrowLeft, MapPin, Calendar, Eye, Share2, Facebook, Twitter } from "lucide-react";
-import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 import { useToast } from "@/hooks/use-toast";
 
@@ -60,21 +59,17 @@ export default function AdDetail() {
 
   if (loading) {
     return (
-      <Layout>
-        <div className="container mx-auto px-4 py-8 text-center">
-          <p className="text-muted-foreground">Loading ad...</p>
-        </div>
-      </Layout>
+      <div className="container mx-auto px-4 py-8 text-center">
+        <p className="text-muted-foreground">Loading ad...</p>
+      </div>
     );
   }
 
   if (!ad) {
     return (
-      <Layout>
-        <div className="container mx-auto px-4 py-8 text-center">
-          <p className="text-muted-foreground">Ad not found</p>
-        </div>
-      </Layout>
+      <div className="container mx-auto px-4 py-8 text-center">
+        <p className="text-muted-foreground">Ad not found</p>
+      </div>
     );
   }
 
@@ -103,7 +98,7 @@ export default function AdDetail() {
   });
 
   return (
-    <Layout>
+    <>
       <SEO
         title={`${ad.title} - Free Ads`}
         description={ad.description.substring(0, 160)}
@@ -263,6 +258,6 @@ export default function AdDetail() {
           </div>
         </div>
       </div>
-    </Layout>
+    </>
   );
 }

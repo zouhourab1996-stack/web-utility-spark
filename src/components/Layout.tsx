@@ -69,6 +69,15 @@ const Layout = ({ children }: LayoutProps) => {
               <Link to="/" className={`text-sm font-medium transition-colors hover:text-primary ${location.pathname === '/' ? 'text-primary' : 'text-muted-foreground'}`}>
                 Home
               </Link>
+              <Link to="/games" className={`text-sm font-medium transition-colors hover:text-primary ${location.pathname === '/games' ? 'text-primary' : 'text-muted-foreground'}`}>
+                Games
+              </Link>
+              <Link to="/free-ads" className={`text-sm font-medium transition-colors hover:text-primary ${location.pathname.startsWith('/free-ads') ? 'text-primary' : 'text-muted-foreground'}`}>
+                Free Ads
+              </Link>
+              <Link to="/about" className={`text-sm font-medium transition-colors hover:text-primary ${location.pathname === '/about' ? 'text-primary' : 'text-muted-foreground'}`}>
+                About Us
+              </Link>
               <Button
                 variant="ghost"
                 size="sm"
@@ -99,6 +108,27 @@ const Layout = ({ children }: LayoutProps) => {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Home
+              </Link>
+              <Link
+                to="/games"
+                className="block px-4 py-2 text-sm font-medium hover:bg-secondary rounded-md transition-colors"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Games Hub
+              </Link>
+              <Link
+                to="/free-ads"
+                className="block px-4 py-2 text-sm font-medium hover:bg-secondary rounded-md transition-colors"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Free Ads
+              </Link>
+              <Link
+                to="/about"
+                className="block px-4 py-2 text-sm font-medium hover:bg-secondary rounded-md transition-colors"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                About Us
               </Link>
               {tools.map((tool) => (
                 <Link
@@ -143,13 +173,16 @@ const Layout = ({ children }: LayoutProps) => {
             <div>
               <h3 className="font-semibold mb-3">Quick Links</h3>
               <div className="space-y-2 text-sm">
-                <Link to="/privacy-policy" className="block text-muted-foreground hover:text-primary">
+                <Link to="/about" className="block text-muted-foreground hover:text-primary transition-colors">
+                  About Us
+                </Link>
+                <Link to="/privacy-policy" className="block text-muted-foreground hover:text-primary transition-colors">
                   Privacy Policy
                 </Link>
-                <Link to="/terms-of-service" className="block text-muted-foreground hover:text-primary">
+                <Link to="/terms-of-service" className="block text-muted-foreground hover:text-primary transition-colors">
                   Terms of Service
                 </Link>
-                <Link to="/contact" className="block text-muted-foreground hover:text-primary">
+                <Link to="/contact" className="block text-muted-foreground hover:text-primary transition-colors">
                   Contact Us
                 </Link>
               </div>

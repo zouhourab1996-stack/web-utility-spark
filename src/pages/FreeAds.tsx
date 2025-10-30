@@ -5,7 +5,6 @@ import { Plus } from "lucide-react";
 import { getAllAds, Ad } from "@/utils/indexedDB";
 import { AdCard } from "@/components/AdCard";
 import { AdFilters } from "@/components/AdFilters";
-import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 
 export default function FreeAds() {
@@ -64,7 +63,7 @@ export default function FreeAds() {
   };
 
   return (
-    <Layout>
+    <>
       <SEO
         title="Free Ads - Post & Browse Classifieds"
         description="Post free classified ads instantly. Buy, sell, trade - electronics, furniture, vehicles, real estate, jobs, services and more. No registration required."
@@ -126,6 +125,6 @@ export default function FreeAds() {
           </div>
         )}
       </div>
-    </Layout>
+    </>
   );
 }

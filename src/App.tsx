@@ -92,10 +92,11 @@ const ChessPuzzles = lazy(() => import("./pages/games/ChessPuzzles"));
 const CoinFlip = lazy(() => import("./pages/games/CoinFlip"));
 const DiceRoller = lazy(() => import("./pages/games/DiceRoller"));
 
-// Free Ads pages
+// Free Ads and About pages
 import FreeAds from "./pages/FreeAds";
 import PostAd from "./pages/PostAd";
 import AdDetail from "./pages/AdDetail";
+import AboutUs from "./pages/AboutUs";
 const FortuneWheel = lazy(() => import("./pages/games/FortuneWheel"));
 const ColorPicker = lazy(() => import("./pages/games/ColorPicker"));
 const Magic8Ball = lazy(() => import("./pages/games/Magic8Ball"));
@@ -145,6 +146,7 @@ const App = () => (
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
             <Route path="/contact" element={<ContactUs />} />
+            <Route path="/about" element={<AboutUs />} />
             <Route path="/settings" element={<SettingsPage />} />
             <Route path="/games" element={<GamesHub />} />
             <Route path="/games/number-slide" element={<NumberSlide />} />

@@ -12,7 +12,6 @@ import { useToast } from "@/hooks/use-toast";
 import { saveAd, Ad } from "@/utils/indexedDB";
 import { uploadMultipleImages } from "@/utils/cloudinary";
 import { Upload, X, Loader2 } from "lucide-react";
-import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 
 const formSchema = z.object({
@@ -126,7 +125,7 @@ export default function PostAd() {
   };
 
   return (
-    <Layout>
+    <>
       <SEO
         title="Post Free Ad - Smart Tools Hub"
         description="Post your classified ad instantly. Add images, description, price, and location. No registration required. Your ad goes live immediately."
@@ -286,6 +285,6 @@ export default function PostAd() {
           </form>
         </Form>
       </div>
-    </Layout>
+    </>
   );
 }
