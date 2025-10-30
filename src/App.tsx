@@ -91,6 +91,11 @@ const TowerDefense = lazy(() => import("./pages/games/TowerDefense"));
 const ChessPuzzles = lazy(() => import("./pages/games/ChessPuzzles"));
 const CoinFlip = lazy(() => import("./pages/games/CoinFlip"));
 const DiceRoller = lazy(() => import("./pages/games/DiceRoller"));
+
+// Free Ads pages
+import FreeAds from "./pages/FreeAds";
+import PostAd from "./pages/PostAd";
+import AdDetail from "./pages/AdDetail";
 const FortuneWheel = lazy(() => import("./pages/games/FortuneWheel"));
 const ColorPicker = lazy(() => import("./pages/games/ColorPicker"));
 const Magic8Ball = lazy(() => import("./pages/games/Magic8Ball"));

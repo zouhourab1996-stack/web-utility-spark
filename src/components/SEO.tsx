@@ -6,7 +6,7 @@ interface SEOProps {
   keywords?: string;
   canonical?: string;
   ogImage?: string;
-  schema?: object;
+  schema?: string | object;
 }
 
 const SEO = ({ title, description, keywords, canonical, ogImage, schema }: SEOProps) => {
@@ -68,7 +68,7 @@ const SEO = ({ title, description, keywords, canonical, ogImage, schema }: SEOPr
       {/* Schema.org JSON-LD */}
       {schema && (
         <script type="application/ld+json">
-          {JSON.stringify(schema)}
+          {typeof schema === 'string' ? schema : JSON.stringify(schema)}
         </script>
       )}
     </Helmet>
