@@ -1,6 +1,7 @@
 import SEO from "@/components/SEO";
 import { seoConfigs } from "@/config/seo";
 import AnalyticsSettings from "@/components/AnalyticsSettings";
+import { IndexNowSubmit } from "@/components/IndexNowSubmit";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Settings } from "lucide-react";
 
@@ -24,6 +25,8 @@ const SettingsPage = () => {
 
         <div className="space-y-6">
           <AnalyticsSettings />
+          
+          <IndexNowSubmit />
           
           <Card>
             <CardHeader>
