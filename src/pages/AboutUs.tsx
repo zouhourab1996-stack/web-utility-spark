@@ -1,13 +1,16 @@
 import { Calculator, Users, Heart, Target, Sparkles } from "lucide-react";
 import SEO from "@/components/SEO";
 
+import { seoConfigs } from "@/config/seo";
+
 const AboutUs = () => {
   return (
     <>
       <SEO
-        title="About Us — Smart Tools Hub"
-        description="Learn about Smart Tools Hub, our mission to provide free online tools for everyone, and how we're supporting community projects."
-        canonical="/about"
+        title={seoConfigs["/about"].title}
+        description={seoConfigs["/about"].description}
+        keywords={seoConfigs["/about"].keywords}
+        canonical={seoConfigs["/about"].canonical}
       />
       <div className="min-h-screen bg-gradient-to-b from-background to-secondary/20">
         {/* Hero Section */}

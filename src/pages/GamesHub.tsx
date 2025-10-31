@@ -7,7 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { games, gameCategories } from "@/config/games";
 import { Search, Gamepad2, TrendingUp, Clock, Star } from "lucide-react";
 import SEO from "@/components/SEO";
-import { siteConfig } from "@/config/seo";
+import { siteConfig, seoConfigs } from "@/config/seo";
 
 const GamesHub = () => {
   const [showAll, setShowAll] = useState(false);
@@ -47,10 +47,10 @@ const GamesHub = () => {
   return (
     <>
       <SEO
-        title="Free Online Games - 50+ HTML5 Browser Games"
-        description="Play 50+ free online games directly in your browser. Puzzles, arcade games, quizzes, memory games, strategy, and more. No downloads required!"
-        keywords="free online games, HTML5 games, browser games, puzzle games, arcade games, quiz games, memory games, strategy games, casual games, fun games, web games"
-        canonical="/games"
+        title={seoConfigs["/games"].title}
+        description={seoConfigs["/games"].description}
+        keywords={seoConfigs["/games"].keywords}
+        canonical={seoConfigs["/games"].canonical}
         schema={schema}
       />
 

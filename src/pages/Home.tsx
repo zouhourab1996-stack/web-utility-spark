@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import ToolCard from "@/components/ToolCard";
 import heroBackground from "@/assets/hero-background.jpg";
 import SEO from "@/components/SEO";
+import { seoConfigs } from "@/config/seo";
 
 const Home = () => {
   const [showAll, setShowAll] = useState(false);
@@ -269,11 +270,11 @@ const Home = () => {
   return (
     <>
       <SEO
-        title="Smart Tools Hub — Free Online Calculators, Converters & Productivity Tools"
-        description="Access 30+ free online tools including calculators, unit converters, password generator, QR code generator, recipe scaler, and more. Fast, simple, and mobile-friendly utilities."
-        keywords="online tools, free calculators, unit converter, stopwatch online, QR generator, password generator, currency converter, GPA calculator, text to speech, word counter, productivity tools, smart utilities, online toolkit, easy converters, free web utilities, recipe scaler, price comparator, meeting scheduler"
-        canonical="/"
-        schema={schema}
+        title={seoConfigs["/"].title}
+        description={seoConfigs["/"].description}
+        keywords={seoConfigs["/"].keywords}
+        canonical={seoConfigs["/"].canonical}
+        schema={seoConfigs["/"].schema}
       />
       <div className="min-h-screen">
         {/* Hero Section */}
