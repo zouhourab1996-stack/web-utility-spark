@@ -3,12 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     
-    <!-- Basic Meta Tags (React Helmet manages page-specific SEO) -->
-    <title>Smart Tools Hub</title>
-    <meta name="description" content="Free online tools for productivity, finance, health, and more" />
+    <!-- SEO Meta Tags -->
+    <title>Smart Tools Hub - Free Online Calculators, Converters & Productivity Tools</title>
+    <meta name="description" content="Access 30+ free online tools and 50+ games. Calculators, converters, generators, games and more. No signup required. Works on all devices." />
+    <meta name="keywords" content="free online tools, calculators, converters, productivity tools, games, BMI calculator, currency converter, QR generator, password generator, unit converter" />
+    <meta name="author" content="Smart Tools Hub" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href="https://freeadstools.wuaze.com/" />
+    
+    <!-- OpenGraph / Social Media Meta Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://freeadstools.wuaze.com/" />
+    <meta property="og:title" content="Smart Tools Hub - Free Online Tools & Games" />
+    <meta property="og:description" content="Access 30+ free online tools and 50+ games. Calculators, converters, generators and more. No signup required." />
+    <meta property="og:image" content="https://freeadstools.wuaze.com/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Smart Tools Hub" />
+    <meta property="og:locale" content="en_US" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://freeadstools.wuaze.com/" />
+    <meta name="twitter:title" content="Smart Tools Hub - Free Online Tools & Games" />
+    <meta name="twitter:description" content="Access 30+ free online tools and 50+ games. Calculators, converters, generators and more." />
+    <meta name="twitter:image" content="https://freeadstools.wuaze.com/og-image.jpg" />
     
     <!-- Mobile & PWA -->
     <meta name="theme-color" content="#3b82f6" />
@@ -19,37 +41,116 @@
     <meta name="application-name" content="Smart Tools Hub" />
     <meta name="format-detection" content="telephone=no" />
     
-    <!-- Structured Data -->
+    <!-- DNS Prefetch & Preconnect for Performance -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://plausible.io" />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Sitemap & Robots -->
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    
+    <!-- Structured Data - WebSite Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "Smart Tools Hub",
-      "description": "Free online calculators, converters, and productivity tools",
+      "alternateName": "Free Ads Tools Hub",
+      "description": "Free online calculators, converters, productivity tools, and games for everyone",
       "url": "https://freeadstools.wuaze.com/",
       "publisher": {
         "@type": "Organization",
-        "name": "Smart Tools Hub"
+        "name": "Smart Tools Hub",
+        "url": "https://freeadstools.wuaze.com/"
       },
       "potentialAction": {
         "@type": "SearchAction",
-        "target": "https://freeadstools.wuaze.com/#/search?q={search_term_string}",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://freeadstools.wuaze.com/#/search?q={search_term_string}"
+        },
         "query-input": "required name=search_term_string"
       },
       "copyrightHolder": {
         "@type": "Organization",
         "name": "Smart Tools Hub"
       },
-      "copyrightYear": "2025"
+      "copyrightYear": "2025",
+      "inLanguage": "en-US"
     }
+    </script>
+    
+    <!-- Structured Data - Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Smart Tools Hub",
+      "url": "https://freeadstools.wuaze.com/",
+      "logo": "https://freeadstools.wuaze.com/favicon.ico",
+      "sameAs": [],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Service",
+        "url": "https://freeadstools.wuaze.com/#/contact"
+      }
+    }
+    </script>
+    
+    <!-- Structured Data - WebPage Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Smart Tools Hub - Home",
+      "description": "Access 30+ free online tools and 50+ games including calculators, converters, generators and productivity tools",
+      "url": "https://freeadstools.wuaze.com/",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "Smart Tools Hub",
+        "url": "https://freeadstools.wuaze.com/"
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://freeadstools.wuaze.com/"
+        }]
+      }
+    }
+    </script>
+
+    <!-- SPA Redirect Script for GitHub Pages -->
+    <script>
+      (function() {
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
+
+    <!-- Dark Mode Toggle Script -->
+    <script>
+      (function() {
+        try {
+          const theme = localStorage.getItem('theme') || 'light';
+          if (theme === 'dark') {
+            document.documentElement.classList.add('dark');
+          }
+        } catch (e) {
+          console.error('Theme initialization error:', e);
+        }
+      })();
     </script>
 
     <!-- Plausible Analytics - Privacy-friendly analytics -->
     <script defer data-domain="freeadstools.wuaze.com" src="https://plausible.io/js/script.js"></script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3VX4DDQCMH"></script>
@@ -57,20 +158,45 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-3VX4DDQCMH');
+      gtag('config', 'G-3VX4DDQCMH', {
+        'anonymize_ip': true,
+        'cookie_flags': 'SameSite=None;Secure'
+      });
     </script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    
+    <!-- Security Headers (via meta tags as fallback) -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
   </head>
 
   <body>
+    <!-- React App Root -->
     <div id="root"></div>
+    
+    <!-- Main Application Bundle (Vite automatically injects the correct paths during build) -->
     <script type="module" src="/src/main.tsx"></script>
     
-    <!-- Copyright Protection Notice -->
+    <!-- Fallback for No JavaScript -->
     <noscript>
-      <div style="padding: 20px; text-align: center; background: #f3f4f6;">
-        <p style="font-size: 14px; color: #374151; margin-bottom: 10px;">© 2025 Smart Tools Hub. All rights reserved. No part of this website may be reproduced without permission.</p>
-        <p style="font-size: 14px; color: #6b7280;">JavaScript is required to use Smart Tools Hub. Please enable JavaScript in your browser.</p>
+      <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; padding: 20px; text-align: center; background: #f3f4f6; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;">
+        <h1 style="font-size: 24px; color: #1f2937; margin-bottom: 16px;">Smart Tools Hub</h1>
+        <p style="font-size: 16px; color: #374151; margin-bottom: 12px; max-width: 600px;">
+          JavaScript is required to use Smart Tools Hub. Please enable JavaScript in your browser to access our free online calculators, converters, and productivity tools.
+        </p>
+        <p style="font-size: 14px; color: #6b7280; margin-top: 24px;">
+          © 2025 Smart Tools Hub. All rights reserved.
+        </p>
       </div>
     </noscript>
+    
+    <!-- Copyright Protection Notice -->
+    <div style="display: none;">
+      © 2025 Smart Tools Hub. All rights reserved. No part of this website may be reproduced, distributed, or transmitted without prior written permission.
+    </div>
   </body>
 </html>
