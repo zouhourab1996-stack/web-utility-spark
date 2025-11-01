@@ -1,5 +1,5 @@
 const INDEXNOW_API_KEY = 'a056ae0d787342ff9c70bce0dc58b379';
-const BASE_URL = 'https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed';
+const BASE_URL = 'https://freeadstools.wuaze.com';
 const KEY_LOCATION = `${BASE_URL}/a056ae0d787342ff9c70bce0dc58b379.txt`;
 
 interface IndexNowSubmission {
@@ -16,7 +16,7 @@ const INDEXNOW_ENDPOINTS = [
 
 export const submitToIndexNow = async (urls: string[]) => {
   const submission: IndexNowSubmission = {
-    host: 'zouhourab1996-stack.github.io',
+    host: 'freeadstools.wuaze.com',
     key: INDEXNOW_API_KEY,
     keyLocation: KEY_LOCATION,
     urlList: urls.map(url => url.startsWith('http') ? url : `${BASE_URL}${url}`)

@@ -8,7 +8,7 @@ export interface SEOConfig {
 
 export const siteConfig = {
   name: "Smart Tools Hub",
-  url: "https://zouhourab1996-stack.github.io/free-ads-tools-hub-classifed",
+  url: "https://freeadstools.wuaze.com",
   ogImage: "/og-image.png",
 };
 

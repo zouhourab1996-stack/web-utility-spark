@@ -10,7 +10,7 @@ interface SEOProps {
 }
 
 const SEO = ({ title, description, keywords, canonical, ogImage, schema }: SEOProps) => {
-  const baseUrl = "https://zouhourab1996-stack.github.io/web-utility-spark";
+  const baseUrl = "https://freeadstools.wuaze.com";
   const fullTitle = title.includes("Smart Tools Hub") ? title : `${title} | Smart Tools Hub`;
   const defaultImage = `${baseUrl}/og-image.png`;
   
